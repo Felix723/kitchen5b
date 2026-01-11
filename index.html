@@ -1,0 +1,183 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dormitory Kitchen Cleaning Schedule</title>
+    <style>
+        @page {
+            margin: 0.5in;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #1e3a5f;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .header h1 {
+            color: #1e3a5f;
+            margin: 0;
+            font-size: 28px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        
+        .header .subtitle {
+            color: #666;
+            font-size: 14px;
+            margin-top: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        thead {
+            background-color: #1e3a5f;
+            color: white;
+        }
+        
+        th {
+            padding: 14px 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 14px;
+            letter-spacing: 0.3px;
+            border: 1px solid #1e3a5f;
+        }
+        
+        td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            font-size: 13px;
+            color: #333;
+        }
+        
+        tbody tr:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+        
+        tbody tr:hover {
+            background-color: #e8f0f8;
+        }
+        
+        .week-cell {
+            text-align: center;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>CLEANING SCHEDULE KITCHEN 5B</h1>
+            <div class="subtitle">What happens in 5B stays in 5B</div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 30%;">ROOMS</th>
+                    <th style="width: 22%;">START DATE</th>
+                    <th style="width: 22%;">END DATE</th>
+                    <th style="width: 26%;">WEEK</th>
+                </tr>
+            </thead>
+            <tbody id="scheduleBody">
+                <tr>
+                    <td>All</td>
+                    <td>5-Jan</td>
+                    <td>11-Jan</td>
+                    <td class="week-cell">2</td>
+                </tr>
+                <tr>
+                    <td>501 + 502</td>
+                    <td>12-Jan</td>
+                    <td>18-Jan</td>
+                    <td class="week-cell">3</td>
+                </tr>
+                <tr>
+                    <td>549 + 550</td>
+                    <td>19-Jan</td>
+                    <td>25-Jan</td>
+                    <td class="week-cell">4</td>
+                </tr>
+                <tr>
+                    <td>503 + 526</td>
+                    <td>26-Jan</td>
+                    <td>1-Feb</td>
+                    <td class="week-cell">5</td>
+                </tr>
+                <tr>
+                    <td>551 + 528</td>
+                    <td>2-Feb</td>
+                    <td>8-Feb</td>
+                    <td class="week-cell">6</td>
+                </tr>
+                <tr>
+                    <td>548 + 529</td>
+                    <td>9-Feb</td>
+                    <td>15-Feb</td>
+                    <td class="week-cell">7</td>
+                </tr>
+                <tr>
+                    <td>522 + 523</td>
+                    <td>16-Feb</td>
+                    <td>22-Feb</td>
+                    <td class="week-cell">8</td>
+                </tr>
+                <tr>
+                    <td>501 + 502</td>
+                    <td>23-Feb</td>
+                    <td>28-Feb</td>
+                    <td class="week-cell">9</td>
+                </tr>
+                <tr>
+                    <td>549 + 550</td>
+                    <td>1-Mar</td>
+                    <td>8-Jan</td>
+                    <td class="week-cell">10</td>
+                </tr>
+                <tr>
+                    <td>503 + 526</td>
+                    <td>9-Mar</td>
+                    <td>15-Mar</td>
+                    <td class="week-cell">11</td>
+                </tr>
+                <tr>
+                    <td>551 + 528</td>
+                    <td>16-Mar</td>
+                    <td>22-Mar</td>
+                    <td class="week-cell">12</td>
+                </tr>
+                <tr>
+                    <td>548 + 529</td>
+                    <td>23-Mar</td>
+                    <td>29-Mar</td>
+                    <td class="week-cell">13</td>
+                </tr>
+                <tr>
+                    <td>522 + 523</td>
+                    <td>30-Mar</td>
+                    <td>5-Apr</td>
+                    <td class="week-cell">14</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
